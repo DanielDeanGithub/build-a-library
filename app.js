@@ -14,7 +14,7 @@ class Media {
     }
 
     get ratings() {
-        return this._ratingsl
+        return this._ratings;
     }
 
     set isCheckedOut(value) {
@@ -34,3 +34,22 @@ class Media {
         this._ratings.push(rating);
     }
 }
+
+const test = new Media('test');
+console.log(test);
+console.log(test.title);
+console.log(test.isCheckedOut);
+test.toggleCheckOutStatus();
+console.log(test.isCheckedOut);
+test.toggleCheckOutStatus();
+console.log(test.isCheckedOut);
+test.addRating(5);
+test.addRating(1);
+test.addRating(2);
+test.addRating(3);
+test.addRating(4);
+test.addRating(5);
+test.addRating(5);
+test.addRating(5);
+console.log(test.ratings);
+console.log(test.getAverageRating());
