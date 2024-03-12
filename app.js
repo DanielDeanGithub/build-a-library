@@ -74,6 +74,8 @@ console.log(historyOfEverything.isCheckedOut);
 historyOfEverything.addRating(4);
 historyOfEverything.addRating(5);
 historyOfEverything.addRating(5);
+console.log(historyOfEverything.getAverageRating());
+
 
 /*
 const test = new Media('test');
