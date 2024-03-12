@@ -35,6 +35,15 @@ class Media {
     }
 }
 
+
+class Book extends Media {
+    
+}
+
+
+
+
+
 const test = new Media('test');
 console.log(test);
 console.log(test.title);
