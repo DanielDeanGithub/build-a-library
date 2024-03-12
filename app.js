@@ -55,6 +55,8 @@ class Book extends Media {
 class Movie extends Media {
     constructor(director, title, runTime) {
         super(title);
+        this._director = director;
+        this._runTime = runTime;
     }
 }
 
