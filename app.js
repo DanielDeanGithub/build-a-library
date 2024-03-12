@@ -37,7 +37,9 @@ class Media {
 
 
 class Book extends Media {
-    
+    constructor(author, title, pages) {
+
+    }
 }
 
 
