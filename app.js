@@ -58,6 +58,14 @@ class Movie extends Media {
         this._director = director;
         this._runTime = runTime;
     }
+
+    get director() {
+        return this._director;
+    }
+
+    get runTime() {
+        return this._runTime;
+    }
 }
 
 
