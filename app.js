@@ -78,6 +78,13 @@ console.log(historyOfEverything.getAverageRating());
 
 const speed = new Movie('Jan de Bont', 'Speed', 116);
 speed.toggleCheckOutStatus();
+console.log(speed.isCheckedOut);
+
+
+
+
+
+
 
 /*
 const test = new Media('test');
