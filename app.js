@@ -77,7 +77,7 @@ historyOfEverything.addRating(5);
 console.log(historyOfEverything.getAverageRating());
 
 const speed = new Movie('Jan de Bont', 'Speed', 116);
-
+speed.toggleCheckOutStatus();
 
 /*
 const test = new Media('test');
