@@ -104,8 +104,6 @@ class CD extends Media {
     }
 }
 
-
-
 const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everything', 544);
 historyOfEverything.toggleCheckOutStatus();
 console.log(historyOfEverything.isCheckedOut);
@@ -122,7 +120,6 @@ speed.addRating(1);
 speed.addRating(5);
 console.log(speed.getAverageRating());
 
-
 const rideTheLightning = new CD("Metallica", "Ride the Lightning", [
   "Fight Fire with Fire",
   "Ride the Lightning",
@@ -133,41 +130,13 @@ const rideTheLightning = new CD("Metallica", "Ride the Lightning", [
   "Creeping Death",
   "The Call of Ktulu",
 ]);
-
 console.log(rideTheLightning.artist);
 console.log(rideTheLightning.title);
+rideTheLightning.toggleCheckOutStatus();
+console.log(rideTheLightning.isCheckedOut);
 rideTheLightning.addRating(5);
 rideTheLightning.addRating(5);
 rideTheLightning.addRating(5);
 console.log(rideTheLightning.getAverageRating());
 console.log(rideTheLightning.tracks);
 console.log(rideTheLightning.shuffle());
-
-/*
-speed.addRating('a');
-speed.addRating(0);
-speed.addRating(6);
-speed.addRating(3);
-console.log(speed.ratings);
-*/
-
-/*
-const test = new Media('test');
-console.log(test);
-console.log(test.title);
-console.log(test.isCheckedOut);
-test.toggleCheckOutStatus();
-console.log(test.isCheckedOut);
-test.toggleCheckOutStatus();
-console.log(test.isCheckedOut);
-test.addRating(5);
-test.addRating(1);
-test.addRating(2);
-test.addRating(3);
-test.addRating(4);
-test.addRating(5);
-test.addRating(5);
-test.addRating(5);
-console.log(test.ratings);
-console.log(test.getAverageRating());
-*/
