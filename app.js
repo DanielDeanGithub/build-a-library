@@ -90,7 +90,18 @@ class CD extends Media {
         return this._tracks;
     }
 
-
+    shuffle() {
+        const tempArr = this._tracks;
+        const outputArr = [];
+        
+        while(tempArr.length > 0) {
+            const rng = Math.floor(Math.random() * tempArr.length);
+            outputArr.push(tempArr[rng]);
+            tempArr.splice(rng, 1)
+        }
+        
+        return outputArr;
+    }
 }
 
 
@@ -125,6 +136,12 @@ const rideTheLightning = new CD("Metallica", "Ride the Lightning", [
 
 console.log(rideTheLightning.artist);
 console.log(rideTheLightning.title);
+rideTheLightning.addRating(5);
+rideTheLightning.addRating(5);
+rideTheLightning.addRating(5);
+console.log(rideTheLightning.getAverageRating());
+console.log(rideTheLightning.tracks);
+console.log(rideTheLightning.shuffle());
 
 /*
 speed.addRating('a');
