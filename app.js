@@ -31,7 +31,15 @@ class Media {
     }
 
     addRating(rating) {
-        this._ratings.push(rating);
+        try {
+            if(isNaN(rating) || rating < 1 || rating > 5) {
+                throw Error("Error: Please provide a number between 1 - 5");
+            }            
+            this._ratings.push(rating);
+        } catch(e) {
+            console.log(e);
+        }
+        
     }
 }
 
@@ -85,7 +93,11 @@ speed.addRating(5);
 console.log(speed.getAverageRating());
 
 
-
+speed.addRating('a');
+speed.addRating(0);
+speed.addRating(6);
+speed.addRating(3);
+console.log(speed.ratings);
 
 
 /*
