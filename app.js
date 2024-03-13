@@ -89,6 +89,8 @@ class CD extends Media {
     get tracks() {
         return this._tracks;
     }
+
+
 }
 
 
@@ -110,12 +112,27 @@ speed.addRating(5);
 console.log(speed.getAverageRating());
 
 
+const rideTheLightning = new CD("Metallica", "Ride the Lightning", [
+  "Fight Fire with Fire",
+  "Ride the Lightning",
+  "For Whom the Bell Tolls",
+  "Fade to Black",
+  "Trapped Under Ice",
+  "Escape",
+  "Creeping Death",
+  "The Call of Ktulu",
+]);
+
+console.log(rideTheLightning.artist);
+console.log(rideTheLightning.title);
+
+/*
 speed.addRating('a');
 speed.addRating(0);
 speed.addRating(6);
 speed.addRating(3);
 console.log(speed.ratings);
-
+*/
 
 /*
 const test = new Media('test');
